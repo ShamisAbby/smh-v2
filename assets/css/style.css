@@ -1,0 +1,386 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.for-bg {
+  min-height: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --color1: #2b405c;
+  --color2: #ec9b2b;
+}
+.bg1 {
+  background-color: var(--color1);
+}
+.bg2 {
+  background-color: var(--color2);
+}
+.bg3 {
+  background-color: #eaf2fd;
+}
+.bg4 {
+  background-color: #ece6de;
+}
+.trp {
+  background-color: transparent;
+}
+.clr1 {
+  color: var(--color1);
+}
+.clr2 {
+  color: var(--color2);
+}
+.hr {
+  border: 1px solid #bdbbbb;
+}
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  background-color: #f5f5f5; /* Background color of the scrollbar */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: var(--color1);
+  /*Colorofthescrollbarthumb*/
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* On hover, add a darker color to the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color2);
+}
+
+/* 
+=======> Login Form ----------
+*/
+
+.card-body input {
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-bottom-style: groove;
+  background-color: transparent;
+  border-bottom: 2px solid var(--color2);
+  width: 90%;
+  padding: 5px;
+}
+.login-input:hover {
+  transition: 0.4s ease-in;
+  border-bottom: 2px solid var(--color1);
+}
+
+.myCard {
+  width: 28%;
+}
+@media screen and (max-width: 990px) {
+  .myCard {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .myCard {
+    width: 90%;
+  }
+}
+
+.log-link a {
+  color: var(--color1);
+}
+.log-link a:hover {
+  color: var(--color2);
+}
+.btn-submit {
+  width: 100%;
+  font-weight: bolder;
+  text-align: center;
+  background-color: var(--color2);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+}
+.btn-submit:hover {
+  background-color: transparent;
+  border: 1px dashed var(--color1);
+  color: var(--color1);
+}
+
+/* .icon{
+    fro
+} */
+
+/* ----------------------------------------------------------------- */
+
+/* 
+===> Sig up Form -------------------------
+*/
+.head-logo {
+  width: 70%;
+  height: 20%;
+}
+.input-search {
+  padding: 10px;
+  border-radius: 50px 0 0 50px;
+  border: none;
+  background-color: #fff;
+}
+.input-search:hover {
+  border: none;
+}
+.btn-search {
+  background-color: var(--color2);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  /* border: none; */
+  border-radius: 0 50px 50px 0;
+}
+
+.ask {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  border: none;
+  border-radius: 15px;
+  background-color: #eaf2fd;
+}
+.answr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  border: none;
+  border-radius: 15px;
+  background-color: #ece6de;
+}
+
+.doc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  border: none;
+  border-radius: 15px;
+  background-color: #eaf2fd;
+}
+
+.anwsr-card {
+  background-color: #fff;
+  border: none;
+  border-radius: 35px 35px 35px 0px;
+}
+
+.allQuest {
+  display: flex;
+  flex-direction: row;
+}
+
+.myCards {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 760px) {
+  .myCards {
+    /* margin: 10%; */
+    width: 100%;
+  }
+  .icon i {
+    display: none;
+  }
+  .ask,
+  .answr,
+  .doc {
+    width: 100px;
+  }
+}
+/* @media screen and (max-width: 760px) {
+
+    .ask{
+        margin-top: 10px;
+    }
+    .answr{
+        margin-top: 10px;
+    }
+    .doc{
+        margin-top: 10px;
+    }
+    
+} */
+/* @media screen and(max-width: 760px) {
+    .allQuest{
+        display: flex;
+        flex-direction: column;
+    }
+    .anwsr-card{
+        width: 100%;
+    }
+    .quest-card{
+        width: 100%;
+    }
+
+} */
+
+.user-profile {
+  border: 1px solid #f0eded;
+  border-radius: 30px 30px 0 30px;
+}
+
+.user-link {
+  color: #2c2c2c;
+  font-weight: 500;
+}
+
+.docs {
+  border: 1px solid #f0eded;
+  border-radius: 30px 30px 30px 0;
+}
+.for-doc {
+  border: 1px solid #f0eded;
+  border-radius: 20px;
+}
+.quest-area {
+  border: 1px solid #f0eded;
+  resize: none;
+  /* border: none; */
+  border-radius: 30px 30px 0 30px;
+  padding: 10px;
+  width: 80%;
+  background-color: #f7f7f7;
+}
+.card {
+  border: none;
+}
+
+.btn-expand {
+  transition: all 0.7s ease-in-out;
+  bottom: 20px;
+  right: 30px;
+  border: none;
+  outline: none;
+  z-index: 99;
+  color: #fff;
+  position: fixed;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
+.btn-expand .text {
+  transition: all 0.7s ease-in-out;
+  display: none;
+}
+
+.btn-expand:hover {
+  width: 200px;
+  color: #fff;
+  background-color: var(--color1);
+}
+
+.btn-expand:hover .text {
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.btn-expand:hover i {
+  display: none;
+}
+
+.btn-profile {
+  /* top: 20px;
+    right: 30px; */
+  border: none;
+  outline: none;
+  /* z-index: 99; */
+  color: #fff;
+  float: right;
+  /* position: fixed; */
+  cursor: pointer;
+  border-radius: 50px;
+  /* transition: all 0.5s ease-in-out; */
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 990px) {
+  .search {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+  }
+
+  .head-logo {
+    width: 40%;
+    height: 10%;
+  }
+}
+
+.linkOption2 {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .linkOption1 {
+    display: none;
+  }
+  .linkOption2 {
+    display: inline-block;
+  }
+}
+
+.content {
+  transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -ms-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+}
+
+.Questborder {
+  border-bottom: 1px solid var(--color1);
+  border-left: 1px solid var(--color1);
+  border-right: 1px solid var(--color1);
+  border-radius: 10px;
+  /*background-color: var(--color1);
+  */background-color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.Answerborder {
+  border-bottom: 1px solid var(--color1);
+  border-left: 1px solid var(--color1);
+  border-right: 1px solid var(--color1);
+  border-radius: 10px;
+  /*background-color: var(--color1);
+  */background-color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.paycontent {
+  /* background-color: white;  */
+  height: 40vh;
+  width: 100%;
+  /* display: none;
+    position: fixed; */
+  box-shadow: #2c2c2c;
+}
+/* ----------------- DashBoard ----------------- */
